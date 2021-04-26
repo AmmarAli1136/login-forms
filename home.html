@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-image: url('./images/pine.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .navbar {
+            background-color: rgba(79, 100, 79, 0.308);
+            padding: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        .navbar a.active {
+
+            padding: 20px;
+            margin-left: 10px;
+        }
+
+        .navbar a:hover {
+background-color: rgba(54, 93, 50, 0.5);
+            color: black;
+            padding: 20px;
+            margin-left: 10px;
+        }
+
+        img:hover {
+            opacity: 1.0;
+        }
+        #form-header-text {
+
+color: rgb(34, 80, 53);
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+}
+.form-container {
+width: 33.3%;
+margin-top: 50px;
+margin-left: 30%;
+padding-bottom: 20px;
+padding-top: 20px;
+background-color: rgba(79, 100, 79, 0.308);
+box-shadow:3px 3px 3px rgba(63, 185, 63, 0.794);
+border-radius: 3px;
+
+}
+input{
+margin:  15px auto;
+display: block;
+padding: 15px;
+width: 60%;
+background-color: rgba(45, 109, 54, 0.3);
+border-color: yellowgreen;
+border-radius: 10px;
+}
+input:focus{
+    outline:none;
+}
+::placeholder{
+    color: rgba(245, 245, 245, 0.657);
+}
+#submit{
+padding: 10px;
+border-radius: 10px;
+color: rgba(245, 245, 245, 0.698);
+background-color: rgba(63, 185, 79, 0.794);
+border:none;
+}
+#submit:hover{
+color: rgb(245, 245, 245);
+background-color: rgba(61, 87, 12, 0.623);
+cursor: pointer;
+
+}
+.footer{
+    position: fixed;                
+	width: 100%;
+    padding: 20px;
+	left: 0;
+	bottom: 0;
+	color: rgb(246, 246, 246);
+    background-color: rgba(79, 100, 79, 0.308);
+	text-align: center; 
+}
+#p2{
+    float: left;
+    
+}
+#p3{
+    float:right;
+    margin-right: 25px;
+    
+}
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="navbar">
+            <a class="active" href="#home">Home</a>
+            <a href="contact">contact</a>
+            <a href="#About us ">About us</a>
+            <a class="login" >login</a>
+        </div>
+            <div class="form-container">
+                <h1 id="form-header-text">Login Form</h1>
+                <form action="/index.html">
+                    <input type="text" name="fname" placeholder="please enter your  first name" id="">
+                    <input type="text" name="lname" placeholder="please enter your last name" id="">
+                    <input type="email" name="mymail" placeholder="please enter your email" id="">
+                    <input type="password" name="mypass" placeholder="please enter your password" id="">
+                    <input type="text" name="adress" placeholder="please enter your address" id="">
+                    <input type="submit" id="submit" href="index.html"></a>
+                </form>
+            </div>
+
+    </header>
+
+<footer>
+    <div class="footer">
+        <p id="p1">Copyright &copy; 2021 Raat ke 12 baje.</p>
+        <p id="p2">created by Ammar Ali &hearts;</p>
+        <p id="p3">created by Ammar Ali &hearts;</p>
+    </div>
+</footer>
+
+</body>
+
+</html>
